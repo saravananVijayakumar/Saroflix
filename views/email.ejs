@@ -1,0 +1,19 @@
+<%- include('layouts/header') -%>
+
+<style>
+    #align{
+        margin-top: 17%;
+        margin-left: 10%;
+    }
+    #space{
+        margin-left: 5%;
+    }
+</style>
+
+<form action="/emailCheck" method="POST" id="align" autocomplete="off">
+    <input type="email" style="width:300px" name="email" placeholder="Email" required>
+    <br><br>
+    <input type="submit" value="Next" id="space" class="btn btn-outline-success">&emsp;<input type="reset" value="Cancel" onclick="window.location.replace('http://localhost:2000/home')" class="btn btn-outline-danger"/>
+</form>
+
+<%- include('layouts/footer') -%>

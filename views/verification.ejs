@@ -1,0 +1,26 @@
+<%- include('layouts/header') -%>
+
+<style>
+    #align{
+        margin-top: 17%;
+        margin-left: 10%;
+    }
+    #space{
+        margin-left: 5%;
+    }
+	/*input[type = text]::-webkit-outer-spin-button,
+	input[type = text]::-webkit-inner-spin-button {
+  		-webkit-appearance: none;
+}*/
+
+</style>
+
+<form action="/verification" method="POST" id="align" autocomplete="off">
+    <input type="text" style="width:300px" name="code" placeholder="Enter OTP" minlength="6" maxlength="6" pattern="[0-9]+" title="Must contain only 6 numbers" id="valid" required>
+    <br><br>
+    <input type="submit" value="Next" id="space" class="btn btn-outline-success">&emsp;<input type="reset" value="Cancel" onclick="window.location.replace('http://localhost:2000/home')" class="btn btn-outline-danger">
+</form>
+
+
+
+<%- include('layouts/footer') -%>

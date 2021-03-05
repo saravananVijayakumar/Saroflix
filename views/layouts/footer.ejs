@@ -1,0 +1,15 @@
+
+ <script>
+        
+    var logoutCheck = (event) => {
+        event.preventDefault();
+        if(confirm("Are you sure you want to logout?")){
+            window.location.replace("http://localhost:2000/home");
+        }else{
+            window.reload();
+        }
+    }    
+</script>
+
+</body>
+</html>

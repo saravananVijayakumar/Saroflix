@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>myLoginSite</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <style>
+            body{
+                background-image: url(https://images.squarespace-cdn.com/content/v1/580d90fb2e69cf2049f24c63/1499835935388-EETZ20IQ7QZ8IO3MRFXY/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USOFn4xF8vTWDNAUBm5ducQhX-V3oVjSmr829Rco4W2Uo49ZdOtO_QXox0_W7i2zEA/FLUFF.jpg?format=2500w);
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                font-family: 'Noto Serif', serif;
+            }
+            img { 
+                border-radius: 100%;
+            }
+
+            .color{
+                color: red;
+            }
+            .align{
+                align-items: flex-end;
+            }
+            input:focus{
+		        color:rgba(7, 215, 243, 0.993);
+            }
+	        input{
+	        	color:brown;
+	        }
+</style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-light">
+                <a class="navbar-brand" href="http://localhost:2000/home" class="color">
+                    <img src="/saro.jpg" alt="My_Logo" width="40px">&ensp;
+                    Saroflix
+                </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent" class="align">
+                            <div class="navbar-nav float-right">
+                                <a class="nav-item nav-link" href="http://localhost:2000/home" class="color">Home</a>
+                                <a class="nav-item nav-link" href="http://localhost:2000/login" class="color">Login</a>
+                                <a class="nav-item nav-link" href="http://localhost:2000/signup" class="color">Sign Up</a>
+                                <a class="nav-item nav-link" onclick="logoutCheck(event)" href="" class="color">Logout</a>
+                            </div>
+                        </div>
+        </nav>
+

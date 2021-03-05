@@ -1,0 +1,29 @@
+<%- include('layouts/header') -%>
+
+    <style type="text/css">
+	strong{
+		font-size: 18px;
+	}
+	h1{
+		margin: 10% 5% 2% 7%;
+	}
+	.align{
+		margin-left: 11%;
+	}
+	#move{
+		margin-left: 1.5%;
+	}
+</style>
+
+<h1> Create a new password </h1>
+<br>
+<form action="/reset" method="POST" class="align" autocomplete="off">
+
+<input type="password" name="newPass" style="width: 300px ;" placeholder="New Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$" title="Must contain minimum eight and maximum 16 characters, at least one uppercase letter, one lowercase letter, one number and one special character" required>
+<br><br>
+<input type="password" name="confirmPass" style="width: 300px ;" placeholder="Confirm Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$" title="Must contain minimum eight and maximum 16 characters, at least one uppercase letter, one lowercase letter, one number and one special character" required>
+<br><br>
+<input type="submit"  value="Save" id="move" class="btn btn-outline-success">&emsp;&emsp;<input type="reset" value="Clear" class="btn btn-outline-warning">&emsp;&emsp;<input type="button" value="Cancel" onclick='window.location.replace("http://localhost:2000/login");' class="btn btn-outline-danger">   
+</form>
+
+<%- include('layouts/footer') -%>

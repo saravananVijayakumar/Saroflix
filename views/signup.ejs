@@ -1,0 +1,54 @@
+<%- include('layouts/header') -%>
+
+
+<style type="text/css">
+	div{
+	    font-family: 'Noto Serif', serif;
+	}
+	.move{
+		margin-left: 8%;
+		margin-top: 2%;
+		margin-bottom: 3%;
+		max-width: 386px;
+	}
+	.align{
+		margin-left: 8%;
+	}
+	#left{
+		margin-left: 6%;
+	}
+</style>
+
+<div>
+<div class="move">
+<h1>Sign Up</h1>
+<h5>Please fill this form to create an account!</h5>
+<hr>
+</div>
+<form action="/signup"  method="POST" class="align" autocomplete="off" enctype="multipart/form-data">
+
+	<input style="width: 180px;"  type="text" name="firstName" placeholder="Firstname" required>
+	&emsp;
+    <input style="width: 180px;"  type="text" name="lastName" placeholder="Lastname" required>
+	<br><br>
+	<input style="width: 180px;"  type="date" name="doB" title="Enter Date of birth" required>
+	&emsp;
+	<input style="width: 180px;"  type="text" name="place" placeholder="Place" required>
+	<br><br>
+	<input style="width: 386px;"  type="email" name="eMail" placeholder="Email" required>
+	<br><br>
+    <input style="width: 386px;"  type="password" name="passWord" placeholder=" Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$" title="Must contain minimum eight and maximum 16 characters, at least one uppercase letter, one lowercase letter, one number and one special character" required>
+	<br><br>
+	<input style="width: 386px;"  type="password" name="confirmPassword" placeholder="Confirm Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$" title="Must contain minimum eight and maximum 16 characters, at least one uppercase letter, one lowercase letter, one number and one special character" required>	
+	<br><br>
+	<input type="file" style="width: 386px;"  type="text" name="image" accept="images/*" required>
+	<br><br>
+	<input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a>
+	<br><br>
+	<input type="submit" value="Sign Up" id="left"class="btn btn-outline-success"/>&emsp;<input type="reset" value="Cancel" onclick="window.location.replace('http://localhost:2000/home')" class="btn btn-outline-danger"/>
+		
+</form>
+</div>
+
+<%- include('layouts/footer') -%>
+
