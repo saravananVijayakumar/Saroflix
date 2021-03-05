@@ -20,6 +20,11 @@
    
 # INTO-THE->APP
   ![image](https://user-images.githubusercontent.com/78146653/110097812-77fc8800-7dc5-11eb-83fb-8c83e3bf080e.png)
+  
+# LOG-OUT(redirects to home)
+  ![image](https://user-images.githubusercontent.com/78146653/110098554-58199400-7dc6-11eb-8f31-78df7110097e.png)
+
+  
 
    
    
